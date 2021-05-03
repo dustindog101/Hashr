@@ -1,18 +1,19 @@
 # Hashr
 
-
-This program quickly computes hashes from text and files
-
-USAGE:
-this program can either be used by the command line or as a stand alone console application.
+***
+Hashr can either be used by the command line or as a stand alone console application.
 if used as a console application the program will detect if you entered a file path or if you entered text and will display its hash.
+---
 
-commandline args are -h,-a,-t,-f
+**COMMAND LINE ARGUMENTS**
+|argument|usage|explanation|  
+|----|-----|-------|     
+|-h|hashr.exe -h|displays help screen|
+|-a|hashr.exe -a SHA1|sets hash algorythm|
+|-t|hashr.exe -a SHA1 -t <plain text>|hashes text|
+|-f|hashr.exe -a SHA1 -f <file path>|grabs all the bytes in the file and hashes it|
+---
 
--a sets the algorithm it should hash the input with
--t sets the input type to text
--f sets the input type to a file
--h displays a help screen
 
 examples:hashr.exe -a SHA1 -t this text will be hashed
 OUTPUT:SHA1: c2543fff3bfa6f144c2f06a7de6cd10c0b650cae
