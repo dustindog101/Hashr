@@ -21,10 +21,14 @@ namespace hashr
 
                     Console.Write("> ");
                     string inp = Console.ReadLine();
-                    if (File.Exists(inp))
+                    if (inp.ToLower() == "exit")
+                    {
+                        Environment.Exit(0);
+                    }
+                    if (File.Exists(inp.Replace("\"", "")))
                     {
                         Console.WriteLine("File detected, hashing.");
-                        Console.WriteLine($"SHA1: {cryptography.sha1FromFile(inp)}");
+                        Console.WriteLine($"SHA1: {cryptography.sha1FromFile(inp.Replace("\"", ""))}");
                     }
                     else
                     {
@@ -44,11 +48,15 @@ namespace hashr
     {
         public static string executeargs(string[] args)
         {
-            if (args[0]=="-a"&&args[1].ToLower()=="sha1"&&args[2]=="-t")//SHA1 & text
+            if (args[0].ToLower() == "-e" || args[0].ToLower() == "exit")
+            {
+                Environment.Exit(0);
+            }
+            if (args[0].ToLower()=="-a"&&args[1].ToLower()=="sha1"&&args[2].ToLower()=="-t")//SHA1 & text
             {
                 return cryptography.sha1(args[3]);
             }
-            if (args[0] == "-a" && args[1].ToLower() == "sha1" && args[2] == "-f")//SHA1 & file
+            if (args[0].ToLower() == "-a" && args[1].ToLower() == "sha1" && args[2].ToLower() == "-f")//SHA1 & file
             {
                 return cryptography.sha1FromFile(args[3]);
             }
