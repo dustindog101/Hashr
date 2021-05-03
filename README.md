@@ -10,8 +10,8 @@ if used as a console application the program will detect if you entered a file p
 |--|------------------------------|-------|     
 |-h|hashr.exe -h                     |displays help screen|
 |-a|hashr.exe -a SHA1                |sets hash algorythm|
-|-t|hashr.exe -a SHA1 -t<plain text>|hashes text|
-|-f|hashr.exe -a SHA1 -f<file path>|grabs all the bytes in the file and hashes it|
+|-t|hashr.exe -a SHA1 -t [plain text]|hashes text|
+|-f|hashr.exe -a SHA1 -f[file path]|grabs all the bytes in the file and hashes it|
 ---
 
 
