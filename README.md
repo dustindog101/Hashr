@@ -1,8 +1,9 @@
 # Hashr
 
-***
-Hashr can either be used by the command line or as a stand alone console application.
-if used as a console application the program will detect if you entered a file path or if you entered text and will display its hash.
+
+
+##### Hashr can either be used by the command line or as a stand alone console application.
+##### if used as a console application the program will detect if you entered a file path or if you entered text and will display its hash.
 ---
 
 **COMMAND LINE ARGUMENTS**
