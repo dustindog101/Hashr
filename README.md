@@ -7,18 +7,15 @@ if used as a console application the program will detect if you entered a file p
 
 **COMMAND LINE ARGUMENTS**
 |argument|usage|explanation|  
-|----|-----|-------|     
-|-h|hashr.exe -h|displays help screen|
-|-a|hashr.exe -a SHA1|sets hash algorythm|
-|-t|hashr.exe -a SHA1 -t <plain text>|hashes text|
-|-f|hashr.exe -a SHA1 -f <file path>|grabs all the bytes in the file and hashes it|
+|--|------------------------------|-------|     
+|-h|hashr.exe -h                     |displays help screen|
+|-a|hashr.exe -a SHA1                |sets hash algorythm|
+|-t|hashr.exe -a SHA1 -t<plain text>|hashes text|
+|-f|hashr.exe -a SHA1 -f<file path>|grabs all the bytes in the file and hashes it|
 ---
 
 
-examples:hashr.exe -a SHA1 -t this text will be hashed
-OUTPUT:SHA1: c2543fff3bfa6f144c2f06a7de6cd10c0b650cae
 
-Currently the program only supports SHA1 but other algorithms are coming very soon.
 
 Screenshots of program in use:
 ![image](https://user-images.githubusercontent.com/56493866/116942755-3579ef00-ac40-11eb-9ad1-dda0119f926a.png)
